@@ -1,0 +1,189 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #2c2c2c;
+
+}
+
+header {
+	background: white;
+	padding: 20px;
+}
+
+header > h1 {
+	color: #2c2c2c;
+	text-align: center;
+}
+
+.tablica {
+	margin: 20px auto;
+	border: 3px solid white;
+	width: 200px;
+	color: white;
+	font-size: 40px;
+	text-align: center;
+	padding: 15px 15px;
+	position: relative;
+}
+
+.badge {
+	background: #ff726f;
+	color: white;
+	font-size: 14px;
+	padding:3px 12px;
+}
+
+#user-label {
+	position: absolute;
+	top: 25px;
+	left: -20px;
+}
+
+#computer-label {
+	position: absolute;
+	top: 25px;
+	right: -20px;
+}
+
+.rezultat {
+	font-size: 40px;
+	color: white;
+}
+
+.rezultat > p {
+	text-align: center;
+	font-weight: bold;
+}
+
+.choices {
+	margin:50px 0;
+	text-align: center;
+
+}
+
+.choice {
+	display: inline-block; /* Za da sa horizontalno kartinkite, a ne edna pod druga */
+}
+
+.choice:hover {
+	cursor: pointer;
+}
+
+#msg {
+	text-align: center;
+	color: white;
+	font-size: 25px;
+}
+
+.container {
+	padding: 16px;
+}
+
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+}
+
+button:hover {
+	opacity:1;
+}
+
+h2 {
+	color: white;
+}
+
+.signup-from {
+	text-align: center;
+	width: 50%;
+	margin: 0 auto; /*centers the div */
+}
+
+nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	border: 1px solid #e7e7e7;
+	background-color: #f3f3f3;
+}
+
+li {
+	float: right;
+}
+
+nav h1{
+	float: left;
+	margin: 0 auto;
+	text-align: center;
+}
+
+li a {
+	display: block;
+	color: #666;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover:not(.active) {
+	background-color: #ddd;
+}
+
+li a.active {
+	color: white;
+	background-color: #4CAF50;
+}
+
+p {
+	color: white;
+}
+
+/*Table design*/
+
+#highScores {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#highScores td, #customers th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+#highScores tr:nth-child(even){background-color: #f2f2f2;}
+#highScores tr:nth-child(odd){background-color: #ffffff;}
+
+#highScores tr:hover {background-color: #ddd;}
+
+#highScores th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #4CAF50;
+	color: white;
+}
